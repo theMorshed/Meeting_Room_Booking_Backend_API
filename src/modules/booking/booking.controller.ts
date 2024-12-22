@@ -2,8 +2,6 @@ import { StatusCodes } from 'http-status-codes'; // For status codes
 import catchAsync from '../../utils/catchAsync';
 import { createBookingService, deleteBookingService, getAllBookingsService, getUserBookingsService, updateBookingService } from './booking.service';
 import sendResponse from '../../utils/sendResponse';
-import config from '../../config';
-import jwt, { JwtPayload } from 'jsonwebtoken';
 
 export const createBooking = catchAsync(async (req, res) => {
     // Call the service to create the booking
